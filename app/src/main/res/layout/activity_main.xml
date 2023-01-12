@@ -35,7 +35,7 @@
                 style="@style/IntentButtonMain"
                 android:id="@+id/library_button_main"
                 android:text="@string/media_button"
-                app:icon="@drawable/settings"
+                app:icon="@drawable/library"
                 />
 
             <Button
