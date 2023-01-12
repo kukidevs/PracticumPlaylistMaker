@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     android:orientation="vertical"
-    android:background="?attr/colorOnPrimary"
+    android:background="?attr/colorSecondary"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             app:icon="@drawable/arrow_back"
             app:iconGravity="textStart"
             app:iconPadding="@dimen/button_icon_padding"
-            app:iconTint="?attr/colorOnSecondary"
+            app:iconTint="?attr/colorPrimaryVariant"
             android:backgroundTint="@color/white"
             app:cornerRadius="0dp"
             style="?android:attr/borderlessButtonStyle"
@@ -29,7 +29,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/settings_button"
-            android:textColor="?attr/colorOnSecondary"
+            android:textColor="?attr/colorPrimaryVariant"
             android:textSize="24sp"
             android:textStyle="bold"
             android:gravity="center_vertical"/>
@@ -70,7 +70,7 @@
             <ImageView
                 style="@style/SettingsImageLine"
                 android:src="@drawable/share"
-                android:contentDescription="@string/share_app" />
+                android:contentDescription="@string/share_app"/>
         </LinearLayout>
 
     </LinearLayout>
