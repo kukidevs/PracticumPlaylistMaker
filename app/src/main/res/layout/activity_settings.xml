@@ -49,7 +49,7 @@
             android:gravity="end"
             >
 
-            <Switch
+            <androidx.appcompat.widget.SwitchCompat
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/margin_box"
@@ -57,7 +57,9 @@
                 android:layout_marginBottom="@dimen/margin_box"
                 android:scaleX="1.2"
                 android:scaleY="1.2"
-                tools:ignore="UseSwitchCompatOrMaterialXml" />
+                tools:ignore="UseSwitchCompatOrMaterialXml"
+                android:theme="@style/SwitchCompatTheme"
+                />
         </LinearLayout>
     </LinearLayout>
     <LinearLayout style="@style/SettingsLineWrapper">
