@@ -14,6 +14,7 @@
         <item name="iconTint">?attr/colorOnSecondary</item>
         <item name="android:fontFamily">@font/ys_display_medium</item>
         <item name="android:textFontWeight">500</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
     </style>
     <style name="SettingsTextLine">
         <item name="android:layout_width">wrap_content</item>
@@ -22,6 +23,7 @@
         <item name="android:textColor">?attr/colorPrimaryVariant</item>
         <item name="android:textSize">@dimen/settings_text_size</item>
         <item name="fontFamily">@font/ys_display_regular</item>
+        <item name="android:layout_marginEnd">2dp</item>
     </style>
     <style name="SettingsImageLine">
         <item name="android:layout_height">@dimen/icon_size_settings</item>
@@ -44,6 +46,7 @@
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
     </style>
     <style name="SwitchCompatTheme" >
         <item name="colorControlActivated">@color/blue_main</item>

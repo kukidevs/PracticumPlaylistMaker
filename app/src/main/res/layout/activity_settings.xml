@@ -63,7 +63,9 @@
                 />
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout style="@style/SettingsLineWrapper">
+    <LinearLayout
+        style="@style/SettingsLineWrapper"
+        android:id="@+id/share_app_line">
         <TextView
             style="@style/SettingsTextLine"
             android:text="@string/share_app"
@@ -77,7 +79,10 @@
         </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout style="@style/SettingsLineWrapper">
+    <LinearLayout
+        style="@style/SettingsLineWrapper"
+        android:id="@+id/message_support_line"
+        >
         <TextView
             style="@style/SettingsTextLine"
             android:text="@string/message_support"
@@ -91,7 +96,10 @@
         </LinearLayout>
 
     </LinearLayout>
-    <LinearLayout style="@style/SettingsLineWrapper">
+    <LinearLayout
+        style="@style/SettingsLineWrapper"
+        android:id="@+id/user_agreement_line">
+        >
         <TextView
             style="@style/SettingsTextLine"
             android:text="@string/user_agreement"
