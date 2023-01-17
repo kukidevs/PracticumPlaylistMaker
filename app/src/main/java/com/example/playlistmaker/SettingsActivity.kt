@@ -17,7 +17,7 @@ class SettingsActivity : AppCompatActivity() {
             val displayIntent = Intent(this, MainActivity::class.java)
             startActivity(displayIntent)
         }
-//        ab
+//        abd
         val shareApp = findViewById<LinearLayout>(R.id.share_app_line)
         shareApp.setOnClickListener{
             val sendIntent: Intent = Intent(ACTION_SEND).apply {
