@@ -6,28 +6,67 @@
     android:layout_height="wrap_content"
     tools:context=".SearchActivity"
     android:background="?attr/colorSecondary"
-    android:orientation="horizontal"
-    android:padding="@dimen/margin_box">
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp">
+
+        <ImageView
+            android:id="@+id/iconBack"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/arrow_back"
+            app:tint="?attr/colorPrimaryVariant" />
+
+        <TextView
+            android:text="@string/search_button"
+            android:textColor="?attr/colorPrimaryVariant"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="22sp"
+            android:textFontWeight="500"
+            android:layout_marginStart="28dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_search_field"
+        tools:context=".SearchActivity"
+        android:padding="9dp">
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:src="@drawable/search"
+        app:tint="?attr/colorOnSecondary"
+        android:layout_marginStart="9dp"
+        android:layout_gravity="center_vertical"/>
     <EditText
         android:id="@+id/inputEditText"
         android:layout_width="0dp"
+        android:layout_marginStart="9dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:hint="@string/search_hint"
-        android:maxLength="32"
         android:maxLines="1"
-        android:inputType="text"
+        android:inputType="textNoSuggestions"
+        android:background="@android:color/transparent"
         android:textColor="?attr/colorPrimaryVariant"
-        android:textColorHint="@color/icon_gray"
-        />
+        android:textColorHint="?attr/colorOnSecondary"
+        android:fontFamily="@font/ys_display_regular"
+        android:textSize="16sp"/>
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
         android:id="@+id/clearIcon"
-        android:src="@android:drawable/ic_menu_close_clear_cancel"
+        android:src="@drawable/cross"
         tools:ignore="ContentDescription"
-        app:tint="@color/icon_gray"
+        app:tint="?attr/colorOnSecondary"
         android:layout_gravity="center_vertical"
         android:visibility="gone"/>
-
+    </LinearLayout>
 </LinearLayout>
